@@ -147,6 +147,7 @@ nav p {
 
 #projects {
     padding: 80px 10%;
+    border-top: 1px solid #334155;
 }
 
 .project-grid {
