@@ -238,8 +238,9 @@ nav p {
 /* ----- CONTACT ----- */
 
 #contact {
-    padding: 70px 10%;
+    padding: 60px 10%;
     text-align: center;
+    border-top: 1px solid #334155;
 }
 
 #contact p {
@@ -314,7 +315,7 @@ nav p {
 
 /* ----- PHONE ----- */
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
     nav {
         flex-direction: column;
@@ -325,8 +326,10 @@ nav p {
         gap: 28px;
     }
 
+    /* ABOUT */
+
     #about {
-        padding: 60px 8%;
+        padding: 60px 8% 25px;
     }
 
     .about-intro {
@@ -342,13 +345,22 @@ nav p {
         text-align: center;
     }
 
+    /* SKILLS */
+
     .skill-grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 
     .skill-tags {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    /* PROJECTS */
+
+    #projects {
+    padding: 28px 8% 80px;
+    border-top: 1px solid #334155;
     }
 
     .project-grid {
@@ -365,11 +377,35 @@ nav p {
     }
 
     #projects h2 {
-        text-align: center;
+        text-align: left;
     }
 
+    /* ----- PHONE CONTACT ----- */
 
     #contact {
         padding: 10px 8% 50px 8%;
     }
+
+    /* ---- PHONE TECH SKILLS ----- */
+
+    .about-skills {
+        text-align: left;
+    }
+
+    .about-skills h2 {
+        text-align: left;
+    }
+
+    .skill-card {
+        text-align: left;
+    }
+
+    .skill-card h3 {
+        text-align: left;
+    }
+
+    .skill-tags {
+        justify-content: flex-start;
+    }
+
 }
