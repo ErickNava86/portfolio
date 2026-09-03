@@ -23,26 +23,35 @@ body {
 /* ---- HEADER ----- */
 
 header {
-    position: sticky;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+
     z-index: 1000;
-    background-color: #0f172a;
+    background-color: transparent;
 }
 
 /* ----- NAVIGATION ----- */
 
 nav {
     display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
+    justify-content: flex-end;
+    max-width: 1400px;
     margin: 0 auto;
-    align-items: center;
     padding: 20px 40px;
 }
 
 .nav-links {
     display: flex;
-    gap: 50px;
+    gap: 45px;
+
+    padding: 12px 22px;
+
+    background-color: rgba(15, 23, 42, 0.78);
+
+
+    backdrop-filter: blur(8px);
 }
 
 .nav-links a {
@@ -56,6 +65,92 @@ nav p {
     font-weight: 900;
     font-size: 25px;
     letter-spacing: 1px;
+}
+
+/* ------ CANVAS ------ */
+
+#network-canvas {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+/* ----- HERO ----- */
+
+#hero {
+    position: relative;
+    min-height: 650px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 40px 10%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero-name {
+    margin: 0 0 12px;
+
+    font-size: 64px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+    line-height: 1;
+
+    color: #f8fafc;
+}
+
+#hero h1 {
+    margin: 0 0 24px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 7px;
+
+    color: #60a5fa;
+}
+
+.hero-description {
+    margin: 0;
+    max-width: 600px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #cbd5e1;
+}
+
+.hero-scroll {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #cbd5e1;
+    text-decoration: none;
+
+    font-size: 32px;
+
+    z-index: 2;
 }
 
 /* ----- ABOUT ----- */
@@ -78,7 +173,10 @@ nav p {
     line-height: 1.6;
     max-width: 650px;
     margin: 0;
+    color: #cbd5e1;
 }
+
+/* ----- HERO ----- */
 
 .hero-actions a:hover,
 .project-links a:hover,
@@ -98,6 +196,61 @@ nav p {
     border: 1px solid #f8fafc;
     padding: 10px 18px;
     border-radius: 5px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+#hero {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 40px 10%;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(59, 130, 246, 0.08),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 38% 60%,
+            rgba(96, 165, 250, 0.04),
+            transparent 28%
+        );
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(circle, rgba(147, 197, 253, 0.35) 1px, transparent 1px),
+        radial-gradient(circle, rgba(96, 165, 250, 0.18) 1px, transparent 1px);
+
+    background-size:
+        170px 170px,
+        260px 260px;
+
+    background-position:
+        20px 40px,
+        100px 120px;
+
+    opacity: 0.55;
 }
 
 /* ----- SKILLS ----- */

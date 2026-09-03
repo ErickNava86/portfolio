@@ -9,8 +9,6 @@
 <body>
     <header>
         <nav>
-            <p>ERICK NAVA</p>
-
             <div class="nav-links">
                 <a href="#about">ABOUT</a>
                 <a href="#projects">PROJECTS</a>
@@ -21,25 +19,64 @@
 
     <main>
 
-        <section id="about">
+    <section id="hero">
 
-            <div class="about-intro">
-                <h1>Software Developer</h1>
+        <canvas id="network-canvas"></canvas>
 
-                <p>
-                Computer Science graduate and software developer with a background in leadership, operations, 
-                and technical field work. I bring years of professional experience managing teams, 
-                solving problems under pressure, and delivering results—now applied to building practical software with Python, 
+        <div class="hero-content">
+
+            <p class="hero-name">ERICK NAVA</p>
+
+            <h1>Software Developer</h1>
+
+            <p class="hero-description">
+                Building practical software solutions with Python,
                 web technologies, and modern development tools.
-                </p>
+            </p>
 
-                <div class="hero-actions">
-                    <a href="#projects">View Projects</a>
+            <div class="hero-actions">
 
-                    <a href="https://github.com/ErickNava86" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
-                </div>
+                <a href="#projects">
+                    View Projects
+                </a>
+
+                <a
+                    href="https://github.com/ErickNava86"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
             </div>
+
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll to About section">
+            ↓
+        </a>
+
+    </section>
+
+
+    <section id="about">
+
+        <div class="about-intro">
+
+            <h2>About</h2>
+
+            <p>
+                Computer Science graduate and software developer with a background
+                in leadership, operations, and technical field work. I bring years
+                of professional experience managing teams, solving problems under
+                pressure, and delivering results now applied to building practical
+                software.
+            </p>
+
+        </div>
+
+
+        <div class="about-skills">
 
             <div class="about-skills">
                 <h2>Technical Skills</h2>
@@ -254,6 +291,8 @@
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 
