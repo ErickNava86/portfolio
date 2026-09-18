@@ -550,6 +550,186 @@ nav {
     padding: 10px 18px;
 }
 
+/* ----- RESUME PAGE ----- */
+
+.resume-page {
+    min-height: 100vh;
+
+    width: min(calc(100% - 32px), 1200px);
+    margin-inline: auto;
+
+    padding:
+        clamp(50px, 7vw, 90px)
+        clamp(20px, 5vw, 70px);
+}
+
+
+.resume-section {
+    width: min(100%, 1000px);
+    margin-inline: auto;
+}
+
+
+/* BACK TO PORTFOLIO */
+
+.resume-back {
+    display: inline-block;
+
+    margin-bottom: clamp(50px, 7vw, 80px);
+
+    color: #94a3b8;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.resume-back:hover {
+    color: #60a5fa;
+    transform: translateX(-4px);
+}
+
+
+/* PAGE HEADER */
+
+.resume-header {
+    padding-bottom: clamp(35px, 5vw, 50px);
+
+    border-bottom: 1px solid #334155;
+}
+
+.resume-name {
+    margin: 0 0 10px;
+
+    color: #f8fafc;
+
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+}
+
+.resume-header h1 {
+    margin: 0 0 18px;
+
+    color: #60a5fa;
+
+    font-size: clamp(16px, 1.5vw, 20px);
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.resume-header > p:not(.resume-name) {
+    width: min(100%, 600px);
+
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: clamp(15px, 1.3vw, 18px);
+    line-height: 1.6;
+}
+
+
+/* RESUME OPTIONS */
+
+.resume-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+
+    gap: clamp(20px, 3vw, 30px);
+
+    margin-top: clamp(40px, 6vw, 60px);
+}
+
+
+.resume-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: clamp(24px, 3vw, 32px);
+
+    background-color: #172033;
+
+    border: 1px solid #2b3850;
+    border-radius: 10px;
+}
+
+
+.resume-card h2 {
+    margin: 0 0 18px;
+
+    color: #f8fafc;
+
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 600;
+}
+
+
+.resume-card p {
+    flex-grow: 1;
+
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* RESUME BUTTONS */
+
+.resume-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+.resume-actions a {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    color: #f8fafc;
+
+    text-decoration: none;
+
+    border: 1px solid #64748b;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.resume-actions a:hover {
+    background-color: #253352;
+    border-color: #94a3b8;
+}
+
 
 /* =====================================================
    RESPONSIVE STRUCTURAL CHANGES
